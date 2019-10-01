@@ -98,7 +98,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         catch(Exception e)
         {
             Log.v("openCamera()", "Can't create file to take picture!");
-            Toast.makeText(mActivity, "Please check SD card! Image shot is impossible!", 10000);
+            Toast.makeText(mActivity, "Please check SD card! Image shot is impossible!", Toast.LENGTH_LONG);
             return ;
         }
         mImageUri = FileProvider.getUriForFile(mActivity, mActivity.getApplicationContext().getPackageName() + ".fileprovider", photo);
